@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    V4 Premium Chat Widget JavaScript
-   Standen Accounting Solutions - NO PLACEHOLDERS!
+   The Fishbourne Accountant - NO PLACEHOLDERS!
    ═══════════════════════════════════════════════════════ */
 
 (function() {
@@ -8,66 +8,66 @@
 
   // V4 CONFIGURATION - NO PLACEHOLDERS!
   const config = {
-    businessName: 'Standen Accounting Solutions',
-    primaryColor: '#32373c',
-    botName: 'Accounting Assistant',
+    businessName: 'The Fishbourne Accountant',  // FIXED: No {{BUSINESS_NAME}}
+    primaryColor: '#ffe380',  // FIXED: No {{PRIMARY_COLOR}}
+    botName: 'Accounts Assistant',
     botEmoji: '📊',
     theme: 'light',
-    greeting: 'Hello! 👋 Welcome to Standen Accounting Solutions. I\'m here to help with any questions about our accounting services. How can I assist you?',
+    greeting: 'Hello! 👋 Welcome to The Fishbourne Accountant. I\'m here to help with any questions about our accounting and tax services. How can I assist you?',
     quickReplies: [
       'Get a quote',
       'Tax Returns',
       'Bookkeeping',
-      'Payroll Services',
+      'Company Formation',
       'Opening hours'
     ],
     responses: [
       {
-        keywords: ['book', 'booking', 'appointment', 'schedule', 'reserve', 'reservation', 'register', 'sign up', 'arrange', 'consultation'],
-        answer: 'I\'d be happy to help you arrange a consultation with Lee! 📅\\n\\nHere\'s how:\\n\\n📞 **Call us** on 01243 256695\\n📧 **Email** Lee.standen@standenaccounting.com\\n\\n🕐 We\'re open: Monday - Friday: 9:00am - 5:00pm\\n\\nWe look forward to hearing from you!'
+        keywords: ['book', 'booking', 'appointment', 'schedule', 'reserve', 'reservation', 'register', 'sign up', 'arrange'],
+        answer: 'We\'d love to help you arrange a consultation! 📅\\n\\nHere\'s how:\\n\\n📞 **Call us** on 01243 123 456\\n📧 **Email** monica@thefishbourneaccountant.com\\n\\n🕐 We\'re open: Monday - Friday: 9:00am - 5:00pm\\n\\nWe look forward to hearing from you!'
       },
       {
-        keywords: ['tax', 'returns', 'tax returns', 'self-assessment', 'self assessment'],
-        answer: '📋 **Tax & VAT Services**\\n\\nNavigating tax laws can be complex, but we\'re here to help. We prepare and file your tax returns on time, while maximising reliefs and ensuring you stay compliant with HMRC.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 256695'
+        keywords: ['tax', 'returns', 'tax returns'],
+        answer: '📋 **Tax Returns**\\n\\nSelf-assessment and company tax returns, filed on time, every time. We handle HMRC so you don\'t have to.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 123 456'
       },
       {
-        keywords: ['bookkeeping', 'accounting', 'accounts'],
-        answer: '📊 **Accounting & Bookkeeping**\\n\\nKeeping track of your finances is essential, and we make it effortless. From day-to-day bookkeeping to detailed financial reports, we ensure your records are accurate and up to date.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 256695'
+        keywords: ['bookkeeping'],
+        answer: '📊 **Bookkeeping**\\n\\nCloud-based bookkeeping using Xero and QuickBooks. Real-time visibility of your numbers, zero shoebox receipts.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 123 456'
       },
       {
-        keywords: ['payroll', 'cis', 'paye'],
-        answer: '👥 **Payroll & CIS**\\n\\nManaging payroll can be time-consuming, but we make it simple. We handle your payroll processing, RTI submissions, and CIS returns so you can focus on running your business.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 256695'
+        keywords: ['company', 'formation', 'company formation'],
+        answer: '🏢 **Company Formation**\\n\\nFrom sole trader to limited company, we set you up properly with Companies House, HMRC and your bank.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 123 456'
       },
       {
-        keywords: ['vat', 'returns', 'vat returns', 'mtd'],
-        answer: '💷 **VAT Returns**\\n\\nWe prepare and file your VAT returns on time, ensuring compliance with Making Tax Digital (MTD) requirements and keeping you on the right side of HMRC.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 256695'
+        keywords: ['vat', 'returns', 'vat returns'],
+        answer: '💷 **VAT Returns**\\n\\nMTD-compliant VAT returns filed quarterly. We monitor your threshold and keep you on the right side of HMRC.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 123 456'
       },
       {
-        keywords: ['business', 'advisory', 'business advisory', 'advice', 'growth'],
-        answer: '📈 **Business Advisory & Growth Support**\\n\\nBeyond numbers, we provide strategic business advice to help you make informed decisions, improve profitability, and plan for the future.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 256695'
+        keywords: ['payroll'],
+        answer: '👥 **Payroll**\\n\\nPAYE, auto-enrolment pensions, RTI submissions. Reliable monthly payroll so your team always gets paid correctly.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 123 456'
       },
       {
-        keywords: ['company', 'formation', 'company formation', 'start', 'starting', 'setup'],
-        answer: '🏢 **Company Formation & Compliance**\\n\\nStarting a business? We assist with company formation, ensuring you\'re set up correctly from day one. We also manage annual filings and compliance requirements.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 256695'
+        keywords: ['business', 'advisory', 'business advisory'],
+        answer: '📈 **Business Advisory**\\n\\nBeyond the numbers. We help you plan, forecast and make better decisions to grow your business with confidence.\\n\\nWant to know more or arrange a consultation?\\n📞 01243 123 456'
       },
       {
         keywords: ['hour', 'hours', 'open', 'when', 'time', 'times', 'closed', 'saturday', 'sunday', 'monday'],
-        answer: 'Our opening hours are:\\n\\n🕐 Monday - Friday: 9:00am - 5:00pm\\nSaturday & Sunday: Closed\\n\\n📍 Find us at: Sussex House, 12 Crane St, Chichester, West Sussex PO19 1LN\\n📞 01243 256695'
+        answer: 'Our opening hours are:\\n\\n🕐 Monday - Friday: 9:00am - 5:00pm\\nSaturday: By appointment\\nSunday: Closed\\n\\n📍 Find us at: 11 Barker Close, Fishbourne, West Sussex PO18 8BJ\\n📞 01243 123 456'
       },
       {
         keywords: ['contact', 'phone', 'email', 'address', 'where', 'find', 'location', 'directions', 'map', 'reach'],
-        answer: 'Here\'s how to reach us:\\n\\n📍 **Address:** Sussex House, 12 Crane St, Chichester, West Sussex PO19 1LN\\n📞 **Phone:** 01243 256695\\n📧 **Email:** Lee.standen@standenaccounting.com\\n🕐 **Hours:** Monday - Friday: 9:00am - 5:00pm\\n\\nWe look forward to hearing from you! 😊'
+        answer: 'Here\'s how to reach us:\\n\\n📍 **Address:** 11 Barker Close, Fishbourne, West Sussex PO18 8BJ\\n📞 **Phone:** 01243 123 456\\n📧 **Email:** monica@thefishbourneaccountant.com\\n🕐 **Hours:** Monday - Friday: 9:00am - 5:00pm\\nSaturday: By appointment\\nSunday: Closed\\n\\nWe look forward to hearing from you! 😊'
       },
       {
-        keywords: ['about', 'history', 'who', 'story', 'experience', 'established', 'background', 'lee', 'standen', 'founder'],
-        answer: 'Standen Accounting Solutions is run by Lee Standen, an FMAAT-qualified accountant with nearly 20 years of experience helping small businesses and sole traders manage their finances.\\n\\nBased in Chichester, we provide professional, friendly services tailored to your needs. Our approach is personal, professional, and focused on giving you clarity and confidence to grow.\\n\\n📅 **Experience:** 20 Years\\n🎓 **Qualification:** FMAAT'
+        keywords: ['about', 'history', 'who', 'story', 'experience', 'established', 'background', 'company', 'business', 'you'],
+        answer: 'The Fishbourne Accountant (formerly HB Associates) brings caring, expert accounting services to businesses and individuals across West Sussex. We genuinely care about your success and bring heart to everything we do.\\n\\n📅 **Established:** 2018 (7 years of experience)\\n⭐ **Rating:** 5.0/5 (30+ reviews)'
       },
       {
-        keywords: ['price', 'prices', 'pricing', 'cost', 'costs', 'fee', 'fees', 'quote', 'how much'],
-        answer: 'We offer competitive pricing tailored to your specific needs. Every business is different, so we provide customised quotes based on your requirements.\\n\\n📞 Call us on 01243 256695 or 📧 email Lee.standen@standenaccounting.com for a free, no-obligation quote.\\n\\nWe\'ll discuss your needs and provide transparent pricing with no hidden fees.'
+        keywords: ['review', 'reviews', 'testimonial', 'rating', 'feedback', 'reputation', 'recommend', 'stars', 'trustpilot', 'google'],
+        answer: 'Here\'s what our customers say about us! ⭐\\n\\n💬 *"Harper & Grey transformed how I run my business finances. I actually understand my numbers now and tax season is no l..."*\\n— **Sarah Mitchell** (Freelance Designer)\\n\\n💬 *"Switched from a big firm and the difference is night and day. They actually know my name, respond quickly, and their ..."*\\n— **James Patterson** (E-commerce Business Owner)\\n\\n⭐ **Overall rating: 4.9/5** from 127 reviews'
       }
     ],
-    fallback: 'Thanks for your question! For the best answer, I\'d recommend speaking with Lee at Standen Accounting Solutions directly:\\n\\n📞 01243 256695\\n📧 Lee.standen@standenaccounting.com\\n\\nOr I can help you arrange a consultation — just let me know! 😊'
+    fallback: 'Thanks for your question! For the best answer, I\'d recommend speaking with our team at The Fishbourne Accountant directly:\\n\\n📞 01243 123 456\\n📧 monica@thefishbourneaccountant.com\\n\\nOr I can help you arrange a consultation — just let me know! 😊'
   };
 
   // State

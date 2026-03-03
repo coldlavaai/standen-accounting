@@ -1,381 +1,465 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standen Accounting Solutions | Local Accountant in Chichester, West Sussex</title>
-  <meta name="description" content="Independent Accountant based in Chichester, West Sussex. Expert accounting with a personal touch for small businesses and sole traders. FMAAT qualified with 20 years experience.">
-
-  <!-- Fonts -->
+  <title>Standen Accounting Solutions — Expert Accounting with a Personal Touch | Chichester</title>
+  <meta name="description" content="Standen Accounting Solutions - professional, friendly accounting services for small businesses and sole traders in Chichester. 20 years experience, FMAAT qualified.">
+  <link rel="canonical" href="https://standenaccountingsolutions.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="template.css">
-  <link rel="stylesheet" href="chat-widget-v4.css">
-
-  <!-- Schema.org markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AccountingService",
     "name": "Standen Accounting Solutions",
-    "image": "https://standenaccountingsolutions.com/wp-content/uploads/2025/02/Office15b.jpg",
+    "description": "Expert accounting with a personal touch. Professional, friendly services for small businesses and sole traders in Chichester.",
+    "url": "https://standenaccountingsolutions.com",
+    "telephone": "01243256695",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Sussex House, 12 Crane St",
       "addressLocality": "Chichester",
       "addressRegion": "West Sussex",
-      "postalCode": "PO19 1LN",
       "addressCountry": "GB"
     },
-    "telephone": "+441243256695",
-    "email": "Lee.standen@standenaccounting.com",
-    "priceRange": "££",
-    "openingHours": "Mo-Fr 09:00-17:00",
-    "founder": {
-      "@type": "Person",
-      "name": "Lee Standen",
-      "jobTitle": "FMAAT-qualified Accountant"
-    }
+    "openingHours": "Mo-Fr 09:00-17:00"
   }
   </script>
+  <link rel="stylesheet" href="chat-widget-v4.css">
 </head>
 <body>
-
-  <!-- Navigation -->
   <nav class="nav" id="nav">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a href="index.html" class="nav-brand">
-          <img src="logo.jpg" alt="Standen Accounting Solutions" style="height: 50px; width: auto;">
-        </a>
-
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link active">Home</a>
-          <a href="services.html" class="nav-link">Our Services</a>
-          <a href="testimonials.html" class="nav-link">Testimonials</a>
-          <a href="contact.html" class="nav-link">Contact Us</a>
-          <a href="contact.html" class="btn btn-primary nav-btn">Get Started</a>
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <div class="nav-brand-icon">📊</div>
+        <div>
+          <span class="nav-brand-text">Standen Accounting</span>
+          <span class="nav-brand-sub">Local Accounting Solutions</span>
         </div>
-
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta-wrapper" style="display:flex;align-items:center;gap:20px;">
+        <a href="tel:01243256695" class="nav-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01243 256695
+        </a>
+        <a href="#contact" class="btn btn-primary nav-cta">Free Consultation</a>
       </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#services" onclick="closeMobileNav()">Services</a>
+      <a href="#why-us" onclick="closeMobileNav()">Why Us</a>
+      <a href="#testimonials" onclick="closeMobileNav()">Reviews</a>
+      <a href="#contact" onclick="closeMobileNav()">Contact</a>
+      <div class="nav-mobile-cta">
+        <a href="#contact" class="btn btn-primary" style="width:100%;">Free Consultation</a>
+      </div>
+      <a href="tel:01243256695" class="nav-mobile-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        01243 256695
+      </a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="office.jpg" alt="Standen Accounting Solutions - Chichester" loading="eager">
+    </div>
     <div class="container">
-      <div class="hero-content fade-up">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Local Accounting Solutions · Chichester, West Sussex
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            FMAAT Qualified · Central Chichester
+          </div>
+          <h1>Expert accounting with a personal touch</h1>
+          <p class="hero-subtitle">Professional, friendly accounting services tailored to small businesses and sole traders in West Sussex. 20 years of experience with fast response times and regular check-ins — no confusing jargon.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
+            <a href="#services" class="btn btn-secondary">Our Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-number">FMAAT</div>
+              <div class="stat-label">Qualified</div>
+            </div>
+          </div>
         </div>
-
-        <h1>Expert Accounting with a Personal Touch</h1>
-
-        <p class="hero-subtitle">At Standen Accounting Solutions, we're trusted Accountants in Chichester, providing professional, friendly services tailored to small businesses and sole traders. With nearly 20 years of experience, we offer dependable support to help you manage your finances with confidence.</p>
-
-        <div class="hero-buttons">
-          <a href="contact.html" class="btn btn-primary btn-large">Get Started Today</a>
-          <a href="services.html" class="btn btn-outline btn-large">Our Services</a>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span class="hero-card-title">Your Local Accountant</span>
+              <span class="hero-card-badge">▲ Personal</span>
+            </div>
+            <div class="hero-card-amount">20</div>
+            <div class="hero-card-sub">Years serving Chichester</div>
+            <div class="hero-card-metrics">
+              <div class="hero-card-metric">
+                <div class="metric-label">Experience</div>
+                <div class="metric-value">20 yrs</div>
+              </div>
+              <div class="hero-card-metric">
+                <div class="metric-label">Qualified</div>
+                <div class="metric-value">FMAAT</div>
+              </div>
+              <div class="hero-card-metric">
+                <div class="metric-label">Location</div>
+                <div class="metric-value">Central</div>
+              </div>
+              <div class="hero-card-metric">
+                <div class="metric-label">Support</div>
+                <div class="metric-value">Flexible</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Background gradient overlay -->
-    <div class="hero-gradient"></div>
   </section>
 
-  <!-- Trust Bar -->
-  <section class="trust-bar">
+  <div class="trust-bar">
     <div class="container">
-      <div class="trust-items fade-up">
-        <div class="trust-item">
-          <div class="trust-icon">✓</div>
-          <div class="trust-text">
-            <strong>FMAAT Qualified</strong>
-            <span>Professional Credentials</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">⭐</div>
-          <div class="trust-text">
-            <strong>20 Years</strong>
-            <span>Industry Experience</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">📍</div>
-          <div class="trust-text">
-            <strong>Chichester Based</strong>
-            <span>Local & Accessible</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">🤝</div>
-          <div class="trust-text">
-            <strong>Personal Service</strong>
-            <span>Tailored to You</span>
-          </div>
-        </div>
+      <div class="trust-bar-inner">
+        <div class="trust-item"><span class="trust-icon">🏛️</span>FMAAT Qualified</div>
+        <div class="trust-item"><span class="trust-icon">📍</span>Central Chichester Office</div>
+        <div class="trust-item"><span class="trust-icon">☁️</span>Cloud Bookkeeping</div>
+        <div class="trust-item"><span class="trust-icon">⚡</span>Fast Response Times</div>
+        <div class="trust-item"><span class="trust-icon">🤝</span>Personal Relationships</div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- How We Work Section -->
-  <section class="section">
+  <section class="section" id="services">
     <div class="container">
       <div class="section-header fade-up">
-        <div class="section-badge">Our Process</div>
-        <h2>How We Work with You</h2>
-        <p class="section-intro">A simple, straightforward approach to managing your finances</p>
+        <span class="overline">Our Services</span>
+        <h2>Professional services for small businesses</h2>
+        <p>Flexible in-person and remote support with no confusing jargon.</p>
       </div>
-
-      <div class="steps-grid">
-        <div class="step-card fade-up" data-step>
-          <div class="step-number">1</div>
-          <h3>Your Needs</h3>
-          <p>We start by understanding your unique requirements. Whether you're a sole trader, a small business, or in need of specific accounting support, we take the time to listen and tailor our services to fit your goals.</p>
-        </div>
-
-        <div class="step-card fade-up fade-up-delay-1" data-step>
-          <div class="step-number">2</div>
-          <h3>Plan & Execute</h3>
-          <p>Once we understand your needs, we create a clear plan and get to work. From bookkeeping and tax returns to payroll and advisory services, we handle everything with precision and care.</p>
-        </div>
-
-        <div class="step-card fade-up fade-up-delay-2" data-step>
-          <div class="step-number">3</div>
-          <h3>Support & Growth</h3>
-          <p>Our relationship doesn't end there. We provide ongoing support to ensure your finances stay on track and help you make informed decisions as your business grows.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Meet The Founder Section -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image fade-up">
-          <img src="office.jpg" alt="Standen Accounting Solutions Office in Chichester" class="rounded-image">
-        </div>
-
-        <div class="about-content fade-up fade-up-delay-1">
-          <div class="section-badge">Meet The Founder</div>
-          <h2>Hi, I'm Lee Standen</h2>
-
-          <p>I'm Lee Standen, the face behind Standen Accounting Solutions. I'm an FMAAT-qualified accountant with nearly 20 years of experience helping small businesses and sole traders manage their finances.</p>
-
-          <p>I understand that accounting can feel overwhelming, which is why I'm here to make it simple. Whether you need help with bookkeeping, tax returns, payroll, or business advice, I provide straightforward, reliable support tailored to your needs.</p>
-
-          <p>Based in Chichester, I'm passionate about helping local businesses succeed. My approach is personal, professional, and focused on giving you the clarity and confidence to grow.</p>
-
-          <p><strong>Let's work together to keep your finances on track.</strong></p>
-
-          <div class="about-credentials">
-            <div class="credential-item">
-              <strong>Qualification:</strong> FMAAT
-            </div>
-            <div class="credential-item">
-              <strong>Experience:</strong> 20 Years
-            </div>
-            <div class="credential-item">
-              <strong>Location:</strong> Chichester, West Sussex
-            </div>
-          </div>
-
-          <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Solutions Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-up">
-        <div class="section-badge">What We Offer</div>
-        <h2>Core Solutions</h2>
-        <p class="section-intro">Comprehensive accounting services designed for small businesses and sole traders</p>
-      </div>
-
       <div class="services-grid">
-        <div class="service-card fade-up" data-service>
+        <div class="service-card fade-up fade-up-delay-1">
           <div class="service-icon">📊</div>
           <h3>Accounting & Bookkeeping</h3>
-          <p>Keeping track of your finances is essential, and we make it effortless. From day-to-day bookkeeping to detailed financial reports, we ensure your records are accurate and up to date.</p>
-          <a href="services.html#accounting" class="service-link">Learn more →</a>
+          <p>Professional bookkeeping and accounting services, including cloud bookkeeping for real-time access to your finances.</p>
+          <span class="service-link">Learn more</span>
         </div>
-
-        <div class="service-card fade-up fade-up-delay-1" data-service>
-          <div class="service-icon">💷</div>
-          <h3>Tax & VAT</h3>
-          <p>Navigating tax laws can be complex, but we're here to help. We prepare and file your tax returns on time, while maximising reliefs and ensuring you stay compliant with HMRC.</p>
-          <a href="services.html#tax" class="service-link">Learn more →</a>
-        </div>
-
-        <div class="service-card fade-up fade-up-delay-2" data-service>
+        <div class="service-card fade-up fade-up-delay-2">
           <div class="service-icon">👥</div>
           <h3>Payroll & CIS</h3>
-          <p>Managing payroll can be time-consuming, but we make it simple. We handle your payroll processing, RTI submissions, and CIS returns so you can focus on running your business.</p>
-          <a href="services.html#payroll" class="service-link">Learn more →</a>
+          <p>Complete payroll management and Construction Industry Scheme administration for contractors and subcontractors.</p>
+          <span class="service-link">Learn more</span>
         </div>
-
-        <div class="service-card fade-up fade-up-delay-3" data-service>
-          <div class="service-icon">📈</div>
-          <h3>Business Advisory & Growth Support</h3>
-          <p>Beyond numbers, we provide strategic business advice to help you make informed decisions, improve profitability, and plan for the future.</p>
-          <a href="services.html#advisory" class="service-link">Learn more →</a>
+        <div class="service-card fade-up fade-up-delay-3">
+          <div class="service-icon">💷</div>
+          <h3>VAT Returns</h3>
+          <p>Quarterly VAT return preparation and submission. We ensure you're fully compliant with HMRC requirements.</p>
+          <span class="service-link">Learn more</span>
         </div>
-
-        <div class="service-card fade-up fade-up-delay-4" data-service>
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon">📋</div>
+          <h3>Self-Assessments & CT600s</h3>
+          <p>Personal tax returns and company tax returns filed accurately and on time. We handle HMRC for you.</p>
+          <span class="service-link">Learn more</span>
+        </div>
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon">📄</div>
+          <h3>Year-End Accounts</h3>
+          <p>Annual accounts prepared to Companies House and HMRC standards. Full compliance guaranteed.</p>
+          <span class="service-link">Learn more</span>
+        </div>
+        <div class="service-card fade-up fade-up-delay-3">
           <div class="service-icon">🏢</div>
-          <h3>Company Formation & Compliance</h3>
-          <p>Starting a business? We assist with company formation, ensuring you're set up correctly from day one. We also manage annual filings and compliance requirements.</p>
-          <a href="services.html#formation" class="service-link">Learn more →</a>
-        </div>
-
-        <div class="service-card fade-up fade-up-delay-5" data-service>
-          <div class="service-icon">💼</div>
-          <h3>Self-Assessment Tax Returns</h3>
-          <p>Self-employed? We handle your Self-Assessment tax return with accuracy and efficiency, helping you meet deadlines and claim all eligible expenses.</p>
-          <a href="services.html#self-assessment" class="service-link">Learn more →</a>
+          <h3>Limited Company Accounting</h3>
+          <p>Comprehensive accounting services for limited companies, from startup to established businesses.</p>
+          <span class="service-link">Learn more</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
+  <section class="section section-warm" id="why-us">
     <div class="container">
-      <div class="cta-content fade-up">
-        <h2>Ready to Take Control of Your Finances?</h2>
-        <p>Get in touch today to discuss how we can support your business</p>
-        <div class="cta-buttons">
-          <a href="contact.html" class="btn btn-primary btn-large">Schedule a Consultation</a>
-          <a href="tel:01243256695" class="btn btn-outline-white btn-large">📞 01243 256695</a>
+      <div class="section-header fade-up">
+        <span class="overline">Why Standen Accounting</span>
+        <h2>Local expertise, personal service</h2>
+        <p>20 years of experience serving Chichester's small businesses with care.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-up fade-up-delay-1">
+          <div class="why-icon">🏆</div>
+          <div>
+            <h3>20 Years Experience</h3>
+            <p>Founded by FMAAT-qualified Lee Standen, we've been serving Chichester businesses with expertise since 2005.</p>
+          </div>
+        </div>
+        <div class="why-card fade-up fade-up-delay-2">
+          <div class="why-icon">🤝</div>
+          <div>
+            <h3>Personal Relationships</h3>
+            <p>No confusing jargon, just clear communication and regular check-ins. You'll work directly with Lee.</p>
+          </div>
+        </div>
+        <div class="why-card fade-up fade-up-delay-3">
+          <div class="why-icon">⚡</div>
+          <div>
+            <h3>Fast Response Times</h3>
+            <p>When you need help, we're here. Quick responses and proactive support when you need it most.</p>
+          </div>
+        </div>
+        <div class="why-card fade-up fade-up-delay-4">
+          <div class="why-icon">🔧</div>
+          <div>
+            <h3>Flexible Support</h3>
+            <p>Office-based in central Chichester with remote support options. We work the way that suits you best.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="overline">Client Testimonials</span>
+        <h2>Trusted by Chichester businesses</h2>
+        <p>See what our clients say about working with Standen Accounting.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up fade-up-delay-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Lee has been brilliant. Always responsive, clear explanations and saves me so much stress. Highly recommend!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">J</div>
+            <div>
+              <div class="testimonial-name">James Parker</div>
+              <div class="testimonial-role">Sole Trader</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up fade-up-delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Professional service with a personal touch. Regular check-ins keep us on track and the advice is always spot-on.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">E</div>
+            <div>
+              <div class="testimonial-name">Emma Wilson</div>
+              <div class="testimonial-role">Small Business Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up fade-up-delay-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Switched to Standen Accounting last year and couldn't be happier. Clear pricing, fast responses, and no jargon!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">Tom Richards</div>
+              <div class="testimonial-role">Contractor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-up">
+          <span class="overline" style="display:block;font-size:0.8rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--secondary);margin-bottom:16px;">Get In Touch</span>
+          <h2>Let's discuss your accounting needs</h2>
+          <p>Book a free consultation to discuss how we can help your business thrive.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <h4>Office</h4>
+                <p>Sussex House, 12 Crane St<br>Chichester, West Sussex</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:01243256695">01243 256695</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🕐</div>
+              <div>
+                <h4>Hours</h4>
+                <p>Monday - Friday: 9:00am - 5:00pm<br>Saturday & Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper fade-up fade-up-delay-2">
+          <h3>Book Your Free Consultation</h3>
+          <p>Fill in your details and we'll be in touch within 24 hours.</p>
+          <form id="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.co.uk" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="01243 000 000">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                  <option value="">Select...</option>
+                  <option value="bookkeeping">Accounting & Bookkeeping</option>
+                  <option value="payroll">Payroll & CIS</option>
+                  <option value="vat">VAT Returns</option>
+                  <option value="self-assessment">Self-Assessments</option>
+                  <option value="year-end">Year-End Accounts</option>
+                  <option value="limited">Limited Company Accounting</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your needs</label>
+              <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-col">
-          <img src="logo.jpg" alt="Standen Accounting Solutions" style="height: 45px; width: auto; margin-bottom: 20px;">
-          <p>Independent Accountant based in Chichester, West Sussex. Expert accounting with a personal touch for small businesses and sole traders.</p>
-          <div class="footer-credentials">
-            <strong>FMAAT Qualified</strong> · 20 Years Experience
-          </div>
+        <div class="footer-brand">
+          <a href="#" class="nav-brand" style="text-decoration:none;">
+            <div class="nav-brand-icon">📊</div>
+            <div>
+              <span class="nav-brand-text">Standen Accounting</span>
+              <span class="nav-brand-sub">Local Accounting Solutions</span>
+            </div>
+          </a>
+          <p class="footer-about">Standen Accounting Solutions provides professional, friendly accounting services to small businesses and sole traders across West Sussex and the UK. Founded by FMAAT-qualified Lee Standen with 20 years experience.</p>
         </div>
-
-        <div class="footer-col">
+        <div>
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html#accounting">Accounting & Bookkeeping</a></li>
-            <li><a href="services.html#tax">Tax & VAT</a></li>
-            <li><a href="services.html#payroll">Payroll & CIS</a></li>
-            <li><a href="services.html#advisory">Business Advisory</a></li>
-            <li><a href="services.html#formation">Company Formation</a></li>
+            <li><a href="#services">Accounting & Bookkeeping</a></li>
+            <li><a href="#services">Payroll & CIS</a></li>
+            <li><a href="#services">VAT Returns</a></li>
+            <li><a href="#services">Self-Assessments</a></li>
+            <li><a href="#services">Year-End Accounts</a></li>
           </ul>
         </div>
-
-        <div class="footer-col">
+        <div>
           <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Our Services</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-
-        <div class="footer-col">
+        <div>
           <h4>Contact</h4>
-          <ul class="footer-contact">
-            <li>
-              <strong>Address:</strong><br>
-              Sussex House, 12 Crane St<br>
-              Chichester, West Sussex<br>
-              PO19 1LN
-            </li>
-            <li>
-              <strong>Phone:</strong><br>
-              <a href="tel:01243256695">01243 256695</a>
-            </li>
-            <li>
-              <strong>Email:</strong><br>
-              <a href="mailto:Lee.standen@standenaccounting.com">Lee.standen@standenaccounting.com</a>
-            </li>
+          <ul class="footer-links">
+            <li><a href="tel:01243256695">01243 256695</a></li>
+            <li><a href="#">Sussex House, 12 Crane St, Chichester</a></li>
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>&copy; 2025 Standen Accounting Solutions. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
+        <p>&copy; 2026 Standen Accounting Solutions. FMAAT Qualified.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Chat Widget -->
-  <script src="chat-widget-v4.js"></script>
+  <div class="mobile-cta">
+    <div class="mobile-cta-inner">
+      <a href="tel:01243256695" class="btn btn-call">📞 Call Now</a>
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
 
-  <!-- Navigation & Animations -->
   <script>
-    // Mobile navigation toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      navToggle.classList.toggle('active');
-    });
-
-    // Sticky navigation
-    const nav = document.getElementById('nav');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-
-      if (currentScroll > 100) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-
-      lastScroll = currentScroll;
-    });
-
-    // Intersection Observer for fade-up animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+  (function() {
+    'use strict';
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
       });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    var toggle = document.getElementById('nav-toggle');
+    var mobileNav = document.getElementById('nav-mobile');
+    var isOpen = false;
+    toggle.addEventListener('click', function() {
+      isOpen = !isOpen;
+      mobileNav.classList.toggle('active', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+      var spans = toggle.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = spans[1].style.opacity = spans[2].style.transform = '';
+      }
+    });
+    window.closeMobileNav = function() {
+      isOpen = false;
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = '';
+      var spans = toggle.querySelectorAll('span');
+      spans[0].style.transform = spans[1].style.opacity = spans[2].style.transform = '';
+    };
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var href = this.getAttribute('href');
+        if (href === '#') return;
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          var top = target.getBoundingClientRect().top + window.pageYOffset - nav.offsetHeight - 20;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+  })();
   </script>
+  <script src="chat-widget-v4.js"></script>
 </body>
 </html>

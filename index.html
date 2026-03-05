@@ -461,5 +461,15 @@
   })();
   </script>
   <script src="chat-widget-v4.js"></script>
+<!-- Cold Lava Demo Tracking -->
+<script>
+(function(){
+  var job = document.querySelector('meta[name="cl-job"]');
+  var jobNum = job ? job.content : window.location.hostname.split('.')[0];
+  var img = new Image();
+  img.src = 'https://track.coldlava.ai/pixel/' + encodeURIComponent(jobNum) + '?t=' + Date.now() + '&r=' + encodeURIComponent(document.referrer);
+})();
+</script>
+<meta name="cl-job" content="SA-001">
 </body>
 </html>
